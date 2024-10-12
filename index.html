@@ -1,164 +1,186 @@
 <html>
-<head>
 
-    <title>Audace Cerignola Calcio </title>
+<head>
+    <title>Audace Cerignola Calcio</title>
     <style>
-        img{
-            width: 5%;
-            height: auto;
-            float: left;
-            margin: -10px;
-		}
-		
-		body {
+        body {
             margin: 0;
             padding: 0;
             background-color: #034788;
-			
+            font-family: Arial, sans-serif;
         }
-
+        
         header {
             background-color: #0044cc;
             color: white;
             padding: 15px 0;
             text-align: center;
+            justify-content: center;
         }
 
+        h1 {
+            margin: 0;
+            padding-left: 10px; 
+        }
 
-        section {
-            
-            justify-content: center;
-            padding: 20px;
+        img {
+            width: 5%; 
+            height: auto; 
+            vertical-align: middle; 
+        }
+
+        nav {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        nav a {
+            color: #fecc39;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            border: 1px solid #fecc39;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #fecc39;
+            color: #0044cc;
         }
 
         .team-info {
             max-width: 900px;
-            background-color:  #034788;
+            margin: 20px auto;
+            background-color: #034788;
             padding: 20px;
+            border-radius: 8px;
         }
 
-        h1, h2, h3 {
-            color:  #fecc39;
-			padding: 10px;
-			text-align: center;
-			justify-content: center;
-			text-decoration: none;
-			
+        h2 {
+            color: #fecc39;
+            text-align: center;
+        }
+
+        p {
+            color: #ddd;
+            text-align: center;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
+            margin: 20px 0;
         }
 
-        table, th, td {
+        th {
             border: 1px solid #ddd;
-        }
-
-         td {
             padding: 10px;
             text-align: center;
-			color: #ddd;
+            color: #fecc39;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            color: #ddd;
+        }
+
+        .social, .contact {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
         }
 
         footer {
             text-align: center;
             padding: 15px;
             background-color: #fecc39;
-            color: #white;
+            color: #000;
             margin-top: 20px;
         }
-		p{
-		color: #ddd;
-		text-align: center;
-		justify-content: center;
-		}
-		.social{
-			text-align: center;
-			margin 20px;
-			text-decoration: none;
-			}
-		.contact {
-            text-align: center;
-            margin: 20px 0;
-			padding : 10px;
-			
-        }
-
-
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Audace Cerignola Calcio <img src="Audace_Cerignola_2017_logo.jpg" alt="Logo del Cerignola" title="Logo del Cerignola"></h1>
+        <img src="Audace_Cerignola_2017_logo.jpg" alt="Logo del Cerignola">
+        <h1>Audace Cerignola Calcio</h1>
+        <nav>
+            <a href="#storia">Storia</a>
+            <a href="#rosa">Rosa</a>
+            <a href="#partite">Partite</a>
+            <a href="#social">Social Media</a>
+            <a href="#contatti">Contatti</a>
+        </nav>
     </header>
 
+    <div class="team-info" id="storia">
+        <h2>Storia del Club</h2>
+        <p>L'Audace Cerignola è una squadra di calcio italiana fondata nel 1912. Gioca attualmente in Serie C e rappresenta con orgoglio la città di Cerignola.</p>
+    </div>
 
-
-        <class="team-info">
-            <h2>Storia del Club</h2>
-            <p>L'Audace Cerignola è una squadra di calcio italiana fondata nel 1912. Gioca attualmente in Serie C e rappresenta con orgoglio la città di Cerignola.</p>
-
-            <h2>Rosa della Squadra 2024</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <td>Numero</td>
-                        <td>Giocatore</td>
-                        <td>Ruolo</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>12</td>
-                        <td>Stefano Greco</td>
-                        <td>Portiere</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Gabriele Ingrosso</td>
-                        <td>Difensore</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Santiago Visentin</td>
-                        <td>Difensore</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>Zak Ruggiero</td>
-                        <td>Centrocampista</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>Francesco Salvemini</td>
-                        <td>Attaccante</td>
-                    </tr>
-                   
-                </tbody>
-            </table>
-
-            <h2>Prossime Partite</h2>
-            <p>In aggiornamento...</p>
-        </div>
-    </section>
-
-    <td colspan="3" class="social">
-                        <h2>Seguici sui Social Media</h2>
-                        <a href="https://www.facebook.com/audacecerignola" target="_blank"><h3> Facebook </h3></a>
-                        <a href="https://twitter.com/audacecerignola" target="_blank"><h3>Twitter</h3></a>
-                        <a href="https://www.instagram.com/audacecerignola" target="_blank"><h3>Instagram<h3></a>
-                    </td>
-        <tr class="contact">
-                    <td colspan="3">
-                        <h2>Contatti</h2>
-                        <p>Email: <a href="mailto:audacecerignola1912@gmail.com"><h3>info@cerignolasrl.com</h3></a></p>
-                        <p>Telefono: 0885426722 - 3337232602</p>
-                    </td>
+    <div class="team-info" id="rosa">
+        <h2>Rosa della Squadra 2024</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Numero</th>
+                    <th>Giocatore</th>
+                    <th>Ruolo</th>
                 </tr>
-   
-</body>
-   <footer>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12</td>
+                    <td>Stefano Greco</td>
+                    <td>Portiere</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Gabriele Ingrosso</td>
+                    <td>Difensore</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Santiago Visentin</td>
+                    <td>Difensore</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Zak Ruggiero</td>
+                    <td>Centrocampista</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Francesco Salvemini</td>
+                    <td>Attaccante</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="team-info" id="partite">
+        <h2>Prossime Partite</h2>
+        <p>In aggiornamento...</p>
+    </div>
+
+
+<div class="social" id="social" style="margin-top: 40px;">
+    <h2 style="color: #fecc39;">Seguici sui Social Media</h2>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+        <a href="https://www.facebook.com/audacecerignola" target="_blank" style="background-color: #3b5998; padding: 10px 15px; color: white; text-decoration: none; border-radius: 5px;">Facebook</a>
+        <a href="https://twitter.com/audacecerignola" target="_blank" style="background-color: #1da1f2; padding: 10px 15px; color: white; text-decoration: none; border-radius: 5px;;">Twitter</a>
+        <a href="https://www.instagram.com/ssaudacecerignola/" target="_blank" style="background-color: #c32aa3; padding: 10px 15px; color: white; text-decoration: none; border-radius: 5px;">Instagram</a>
+    </div>
+</div>
+    <div class="contact" id="contatti">
+        <h2>Contatti</h2>
+        <p>Email: <a href="mailto:audacecerignola1912@gmail.com" style="color: #fecc39; text-decoration: none;">info@cerignolasrl.com</a></p>
+        <p>Telefono: 0885426722 - 3337232602</p>
+    </div>
+
+    <footer>
         &copy; Gioele Campanaro
     </footer>
 </body>
