@@ -1,7 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="it">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audace Cerignola Calcio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             margin: 0;
@@ -9,179 +14,168 @@
             background-color: #034788;
             font-family: Arial, sans-serif;
         }
-        
-        header {
+
+        h1, h2 {
+            color: #fecc39;
+        }
+
+        .navbar {
             background-color: #0044cc;
-            color: white;
-            padding: 15px 0;
-            text-align: center;
-            justify-content: center;
         }
 
-        h1 {
-            margin: 0;
-            padding-left: 10px; 
-        }
-
-        img {
-            width: 5%; 
-            height: auto; 
-            vertical-align: middle; 
-        }
-
-        nav {
-            text-align: center;
-            margin: 10px 0;
-        }
-
-        nav a {
-            color: #fecc39;
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 10px;
-            border: 1px solid #fecc39;
-            border-radius: 5px;
-        }
-
-        nav a:hover {
-            background-color: #fecc39;
-            color: #0044cc;
-        }
-
-        .team-info {
-            max-width: 900px;
-            margin: 20px auto;
-            background-color: #034788;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        h2 {
-            color: #fecc39;
-            text-align: center;
-        }
-
-        p {
-            color: #ddd;
-            text-align: center;
-        }
-
-        table {
+        .carousel-inner img {
             width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        th {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-            color: #fecc39;
-        }
-
-        td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-            color: #ddd;
-        }
-
-        .social, .contact {
-            text-align: center;
-            margin: 20px 0;
-            padding: 10px;
+            height: 60vh;
+            object-fit: cover;
         }
 
         footer {
-            text-align: center;
-            padding: 15px;
             background-color: #fecc39;
             color: #000;
-            margin-top: 20px;
+            padding: 15px;
+        }
+
+        footer a {
+            color: #000;
+            margin: 0 10px;
+            font-size: 1.5rem;
         }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <img src="Audace_Cerignola_2017_logo.jpg" alt="Logo del Cerignola">
-        <h1>Audace Cerignola Calcio</h1>
-        <nav>
-            <a href="#storia">Storia</a>
-            <a href="#rosa">Rosa</a>
-            <a href="#partite">Partite</a>
-            <a href="#social">Social Media</a>
-            <a href="#contatti">Contatti</a>
-        </nav>
-    </header>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Audace_Cerignola_2017_logo.jpg" alt="Logo del Cerignola" style="width: 40px;">
+                Audace Cerignola
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#storia">Storia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rosa">Rosa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#partite">Partite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#social">Social Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contatti">Contatti</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <div class="team-info" id="storia">
-        <h2>Storia del Club</h2>
-        <p>L'Audace Cerignola è una squadra di calcio italiana fondata nel 1912. Gioca attualmente in Serie C e rappresenta con orgoglio la città di Cerignola.</p>
+    
+    <div id="clubCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="StadioCer.jpeg" alt="Stadio Cerignola">
+            </div>
+            <div class="carousel-item">
+                <img src="SquadraAz.jpeg" alt="Squadra in azione">
+            </div>
+            <div class="carousel-item">
+                <img src="TifosiCer.jpeg" alt="Tifosi del Cerignola">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#clubCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#clubCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
-    <div class="team-info" id="rosa">
-        <h2>Rosa della Squadra 2024</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Numero</th>
-                    <th>Giocatore</th>
-                    <th>Ruolo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>12</td>
-                    <td>Stefano Greco</td>
-                    <td>Portiere</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Gabriele Ingrosso</td>
-                    <td>Difensore</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Santiago Visentin</td>
-                    <td>Difensore</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>Zak Ruggiero</td>
-                    <td>Centrocampista</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Francesco Salvemini</td>
-                    <td>Attaccante</td>
-                </tr>
-            </tbody>
-        </table>
+    
+    <div class="container mt-5" id="storia">
+        <h2 class="text-center">Storia del Club</h2>
+        <p class="text-center text-light">L'Audace Cerignola è una squadra di calcio italiana fondata nel 1912. Gioca attualmente in Serie C e rappresenta con orgoglio la città di Cerignola.</p>
     </div>
 
-    <div class="team-info" id="partite">
-        <h2>Prossime Partite</h2>
-        <p>In aggiornamento...</p>
+    
+    <div class="container mt-5" id="rosa">
+        <h2 class="text-center">Giocatori più importanti del 2024</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-dark text-light mb-4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Stefano Greco</h5>
+                        <p class="card-text">Numero: 12</p>
+                        <p class="card-text">Ruolo: Portiere</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-light mb-4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Gabriele Ingrosso</h5>
+                        <p class="card-text">Numero: 5</p>
+                        <p class="card-text">Ruolo: Difensore</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-light mb-4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Santiago Visentin</h5>
+                        <p class="card-text">Numero: 3</p>
+                        <p class="card-text">Ruolo: Difensore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-
-<div class="social" id="social" style="margin-top: 40px;">
-    <h2 style="color: #fecc39;">Seguici sui Social Media</h2>
-    <div style="justify-content: center;">
-        <a href="https://www.facebook.com/audacecerignola" target="_blank" style="background-color: #3b5998; padding: 10px 15px; color: white; text-decoration: none; border-radius: 5px;">Facebook</a>
-        <a href="https://twitter.com/audacecerignola" target="_blank" style="background-color: #1da1f2; padding: 10px 15px; color: white; text-decoration: none; border-radius: 5px;;">Twitter</a>
-        <a href="https://www.instagram.com/ssaudacecerignola/" target="_blank" style="background-color: #c32aa3; padding: 10px 15px; color: white; text-decoration: none; border-radius: 5px;">Instagram</a>
+    
+    <div class="container mt-5" id="partite">
+        <h2 class="text-center">Prossime Partite</h2>
+        <p class="text-center text-light">In aggiornamento...</p>
     </div>
-</div>
-    <div class="contact" id="contatti">
+
+    
+    <div class="container text-center mt-5" id="social">
+        <h2>Seguici sui Social Media</h2>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+            <a href="https://www.facebook.com/audacecerignola" target="_blank" class="btn btn-primary"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://twitter.com/audacecerignola" target="_blank" class="btn btn-info"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://www.instagram.com/ssaudacecerignola/" target="_blank" class="btn btn-danger"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </div>
+
+    
+    <div class="container text-center mt-5" id="contatti">
         <h2>Contatti</h2>
-        <p>Email: <a href="mailto:audacecerignola1912@gmail.com" style="color: #fecc39; text-decoration: none;">info@cerignolasrl.com</a></p>
-        <p>Telefono: 0885426722 - 3337232602</p>
+        <p class="text-light">Email: <a href="mailto:audacecerignola1912@gmail.com" style="color: #fecc39;">info@cerignolasrl.com</a></p>
+        <p class="text-light">Telefono: 0885426722 - 3337232602</p>
     </div>
 
-    <footer>
-        &copy; Gioele Campanaro
+    
+    <footer class="text-center">
+        <div class="container">
+            &copy;Gioele Campanaro
+            <div class="mt-2">
+                <a href="https://www.facebook.com/audacecerignola" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/audacecerignola" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ssaudacecerignola/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
