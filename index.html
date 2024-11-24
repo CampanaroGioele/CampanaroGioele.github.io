@@ -40,30 +40,29 @@
             margin: 0 10px;
             font-size: 1.5rem;
         }
-		
-		.logo{
-		width: 40px;
-    height: 40px;
-    object-fit: contain;
-    vertical-align: middle;
-	}
-	
-	.giocatori{
-	width: 200px;
-	height: 200px;
-	object-fit: contain;
-	vertical-align: middle;
-	}
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            vertical-align: middle;
+        }
+
+        .giocatori {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            vertical-align: middle;
+        }
     </style>
 </head>
 
 <body>
-
-    
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="Logo del Cerignola" style="width: 40px;">
+                <img src="logo.png" alt="Logo del Cerignola" class="logo">
                 Audace Cerignola
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,27 +70,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#storia">Storia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#rosa">Rosa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#partite">Partite</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contatti">Contatti</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tematicheEuropee.html">Tematiche Europee</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#storia">Storia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#rosa">Rosa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#partite">Partite</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tematicheEuropee.html">Tematiche Europee</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-   
+    <!-- Carousel -->
     <div id="clubCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -114,49 +103,53 @@
         </button>
     </div>
 
-    
-    <div class="container mt-5" id="storia">
-        <h2 class="text-center">Storia del Club</h2>
-        <p class="text-center text-light">L'Audace Cerignola è una squadra di calcio italiana fondata nel 1912. Gioca attualmente in Serie C e rappresenta con orgoglio la città di Cerignola.</p>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12" id="storia">
+                <h2 class="text-center">Storia del Club</h2>
+                <p class="text-center text-light">L'Audace Cerignola è una squadra di calcio italiana fondata nel 1912. Gioca attualmente in Serie C e rappresenta con orgoglio la città di Cerignola.</p>
+            </div>
+        </div>
     </div>
 
-    <div class="container mt-5" id="rosa">
-        <h2 class="text-center">Giocatori più importanti del 2024</h2>
+        <div class="container mt-5">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-12" id="rosa">
+                <h2 class="text-center">Giocatori più importanti del 2024</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4 col-12">
                 <div class="card bg-dark text-light mb-4">
-                    <div class="card-body text-center">
+                    <div class="card-body">
                         <h5 class="card-title">Stefano Greco</h5>
-                        <p class="card-text">Numero: 12</p>
-                        <p class="card-text">Ruolo: Portiere</p>
+                        <p>Numero: 12<br>Ruolo: Portiere</p>
                         <img src="StefanoGreco2.jpg" alt="Stefano Greco" class="giocatori">
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-12">
                 <div class="card bg-dark text-light mb-4">
-                    <div class="card-body text-center">
+                    <div class="card-body">
                         <h5 class="card-title">Gabriele Ingrosso</h5>
-                        <p class="card-text">Numero: 5</p>
-                        <p class="card-text">Ruolo: Difensore</p>
+                        <p>Numero: 5<br>Ruolo: Difensore</p>
                         <img src="GabrieleIngrosso.jpg" alt="Gabriele Ingrosso" class="giocatori">
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-12">
                 <div class="card bg-dark text-light mb-4">
-                    <div class="card-body text-center">
+                    <div class="card-body">
                         <h5 class="card-title">Santiago Visentin</h5>
-                        <p class="card-text">Numero: 3</p>
-                        <p class="card-text">Ruolo: Difensore</p>
+                        <p>Numero: 3<br>Ruolo: Difensore</p>
                         <img src="SantiagoVisentin.jpg" alt="Santiago Visentin" class="giocatori">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="container mt-5" id="partite">
+   <div class="container mt-5" id="partite">
 	<class logo>
     <h2 class="text-center">Prossime Partite</h2>
     <div class="table-responsive">
@@ -172,37 +165,37 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>21 Novembre 2024</td>
+                    <td>24 Novembre 2024</td>
+                    <td>17:30</td>
+                    <td><img src="logo.png" alt="Logo del Cerignola" style="width: 40px;"class="logo">Audace Cerignola vs <img src="cavese.png" alt="Logo della cavese" style="width: 40px;"class="logo">cavese</td>
+                    <td>Stadio Monterisi</td>
+                    <td>3-1</td>
+                </tr>
+                <tr>
+                    <td>30 Novembre 2024</td>
                     <td>15:00</td>
-                    <td><img src="logo.png" alt="Logo del Cerignola" style="width: 40px";class="logo">Audace Cerignola vs <img src="bari.png" alt="Logo del Bari" style="width: 40px;"class="logo">Bari</td>
-                    <td>Stadio Monterisi</td>
+                    <td><img src="benevento.png" alt="Logo del Benevento" style="width: 40px;"class="logo">Benevento vs <img src="logo.png" alt="Logo del Cerignola" style="width: 40px;"class="logo">Audace Cerignola</td>
+                    <td>Stadio Ciro Vigorito</td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td>28 Novembre 2024</td>
-                    <td>18:00</td>
-                    <td><img src="catanzaro.png" alt="Logo del Catanzaro" style="width: 40px;"class="logo">Catanzaro vs <img src="logo.png" alt="Logo del Cerignola" style="width: 40px;"class="logo">Audace Cerignola</td>
-                    <td>Stadio Nicola Ceravolo</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>5 Dicembre 2024</td>
+                    <td>6 Dicembre 2024</td>
                     <td>20:30</td>
-                    <td><img src="logo.png" alt="Logo del Cerignola" style="width: 40px;"class="logo">Audace Cerignola vs <img src="foggia.png" alt="Logo del Foggia" style="width: 40px;"class="logo">Foggia</td>
+                    <td><img src="logo.png" alt="Logo del Cerignola" style="width: 40px;"class="logo">Audace Cerignola vs <img src="altamura.png" alt="Logo dell'Altamura" style="width: 40px;"class="logo">Altamura</td>
                     <td>Stadio Monterisi</td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td>12 Dicembre 2024</td>
-                    <td>17:00</td>
-                    <td><img src="pescara.png" alt="Logo del Pescara" style="width: 40px;"class="logo">Pescara vs <img src="logo.png" alt="Logo del Cerignola" style="width: 40px;"class="logo">Audace Cerignola</td>
-                    <td>Stadio Adriatico</td>
+                    <td>16 Dicembre 2024</td>
+                    <td>20:30</td>
+                    <td><img src="latina.png" alt="Logo del Latina" style="width: 40px;"class="logo">Latina vs <img src="logo.png" alt="Logo del Cerignola" style="width: 40px;"class="logo">Audace Cerignola</td>
+                    <td>Stadio Domenico Francioni</td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td>19 Dicembre 2024</td>
-                    <td>16:00</td>
-                    <td><img src="logo.png" alt="Logo del Cerignola" style="width: 40px;"class="logo">Audace Cerignola vs <img src="crotone.png" alt="Logo del Crotone" style="width: 40px;"class="logo">Crotone</td>
+                    <td>21 Dicembre 2024</td>
+                    <td>17:30</td>
+                    <td><img src="logo.png" alt="Logo del Cerignola" style="width: 40px;"class="logo">Audace Cerignola vs <img src="juve.png" alt="Logo della Juventus Next Gen" style="width: 40px;"class="logo">Juventus NG</td>
                     <td>Stadio Monterisi</td>
                     <td>-</td>
                 </tr>
