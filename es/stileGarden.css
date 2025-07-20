@@ -1,0 +1,45 @@
+body{
+background-image: ur1(imp/flore-png):
+background-repeat: no-repeat}
+h2{
+font: bold 114% Arial, sans-serifi
+color: #006699}
+#titolo{
+height: 60px;
+font: bold 200% Arial, sans-serif;
+color: #FFFFFF;}
+#titolo2{
+eight: 60px;
+Font: bold 150% Arial, sans-serif;
+color: #FFFFFF;
+background-color: #009300}
+#navbar{
+border: 1px
+solid red;
+position: absolute;
+width: 20%;
+left: 10px;
+top: 140px;
+background-color: #FFFFFF}
+#navbar li{
+font-size: 110% }
+navbar a:link, #navbar a:visited{
+color: navy;
+text-decoration: none }
+#navbar a:hover{
+color: #0000FF }
+#contenuto{
+color: #000000;
+background-color: #FFFFFF;
+margin-right: 20%;
+margin-top: Opx;
+margin-left: 25%;
+margin-bottom: Opx }
+.notizia{
+font-size: 80%}
+#footer{
+height: 30px;
+font: bold 114% ,rial, sans-serif;
+text-align:center;
+color:#FFFFFF;
+background-color:#009300}
