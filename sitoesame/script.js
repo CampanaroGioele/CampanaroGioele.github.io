@@ -11,12 +11,15 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       const username = document.getElementById("username").value;
       const password = document.getElementById("password").value;
-      if((username==utente1 )or( username==utente2 ))
+      if((username==utente1 )or( username==utente2 )){
       user=true;
-         if((username==utente1 )&&( password==password1 ))
+      }
+         if((username==utente1 )&&( password==password1 )){
       pvd=true;
-       if((username==utente2 )&&( password==password2 ))
+         }
+       if((username==utente2 )&&( password==password2 )){
       pvd=true;
+       }
       if (user && pvd) {
         alert("Login effettuato con successo!");
       } else {
@@ -43,5 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
 
 });
