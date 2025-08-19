@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const password1= "123";
   const utente2="Anna";
   const password2="abc"; let user= false; let pvd= false;
+ alert("prova");
   if (loginForm) {
     loginForm.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
          
        if((username==utente2 )&&( password==password2 ))
       pvd=true;
-       alert("prova");
+       
       if (user && pvd)  {
         alert("Login effettuato con successo!");
       } else {
@@ -49,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
 
