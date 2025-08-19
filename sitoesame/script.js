@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
          
        if((username==utente2 )&&( password==password2 ))
       pvd=true;
-       
+       alert("prova");
       if (user && pvd)  {
         alert("Login effettuato con successo!");
       } else {
@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
 
