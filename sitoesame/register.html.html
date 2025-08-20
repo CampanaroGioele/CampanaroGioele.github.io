@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrazione</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js" >
+  </script>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="chisiamo.html">Chi siamo</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <h2>Registrazione</h2>
+  <form id="registerForm">
+    <label for="nome">Username:</label><br>
+    <input type="text" id="userReg" name="user" required><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="passwordReg" name="password" required><br><br>
+
+    <label for="confirmPassword">Conferma Password:</label><br>
+    <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+   
+    <input type="button" id="registra" value="Registrati" onclick="registrazione();">
+  
+    <p>
+    <input type="text" id="errorMessage" style="color: red;" readonly>
+    </p>
+  
+</form>
+ 
+</body>
+</html>
