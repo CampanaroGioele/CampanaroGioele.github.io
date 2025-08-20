@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RaiWay - PCTO</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding-top: 60px;
+      padding-bottom: 100px; /* aumentato per fare spazio all'immagine sopra il footer */
+      text-align: center; /* centra il testo */
+    }
+
+    nav {
+      background: #333;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 15px;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li {
+      display: inline-block;
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #f0f0f0;
+      padding: 0;
+      list-style: none;
+      min-width: 150px;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    nav ul li ul li {
+      display: block;
+	  background:white;
+    }
+
+    nav ul li ul li a {
+      padding: 10px;
+      display: block;
+      text-align: left;
+	   color:#333;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .image-container {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 60px; /* per non sovrapporsi al footer */
+    }
+
+    .image-container img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="pcto.html" target="_blank">Home</a></li>
+    <li><a href="chisono.html" target="_blank">Chi sono</a></li>
+    <li>
+      <a href="raiway.html" target="_blank">Rai Way</a>
+      <ul>
+        <li><a href="visita.html" target="_blank">Visita alla sede RaiWay</a></li>
+      </ul>
+    </li>
+    <li><a href="contatti.html" target="_blank">Contatti</a></li>
+  </ul>
+</nav>
+
+<main class="content">
+  <h2>Cos’è RaiWay</h2>
+  <p>
+    Rai Way è la società del Gruppo Rai che si occupa delle infrastrutture di rete e delle torri di trasmissione 
+    sul territorio italiano. Gestisce la diffusione del segnale televisivo e radiofonico e garantisce che i 
+    programmi Rai possano essere ricevuti in tutta Italia, assicurando un servizio di comunicazione essenziale 
+    per i cittadini.
+  </p>
+
+  <h2>Incontro con l’ingegnere Antonino Scarpati</h2>
+  <p>
+    Durante il nostro percorso di PCTO, abbiamo avuto l’opportunità di incontrare in classe un rappresentante 
+    di Rai Way: l’ingegnere <strong>Antonino Scarpati</strong>.  
+    È stato lui a spiegarci in prima persona cos’è Rai Way, come funziona e quali sono le attività principali 
+    dell’azienda.  
+  </p>
+  <p>
+    Grazie al suo intervento abbiamo compreso meglio il ruolo strategico di Rai Way nella gestione delle 
+    infrastrutture per le telecomunicazioni e l’importanza di garantire la qualità e la continuità del segnale 
+    radiotelevisivo in tutta Italia.
+  </p>
+</main>
+
+<div class="image-container">
+  <img src="img/rai.jpeg" alt="Logo Rai Way">
+</div>
+
+<footer>
+  &copy; Gioele Campanaro - 2025 - Progetto PCTO RaiWay
+</footer>
+
+</body>
+</html>
