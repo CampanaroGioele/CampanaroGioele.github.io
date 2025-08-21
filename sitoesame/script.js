@@ -20,7 +20,7 @@ var userA=new Array("pippo","anna","sergio","ada");
       } else{
            document.getElementById("errorMessage").value="utente non inserito con successo";
       }
-		       if (pwd !== confirmPwd) {
+		       if (pwdA !== confirmPwdA) {
         errorMessage.textContent = "Le password non coincidono!";
       } else {
         errorMessage.textContent = "";
