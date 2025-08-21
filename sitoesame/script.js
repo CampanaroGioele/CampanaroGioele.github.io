@@ -3,7 +3,7 @@ var userA=new Array("pippo","anna","sergio","ada");
  
      function registrazione() {
   
-	//alert("sono in reg");
+	alert("sono in reg");
 		 
 
     var user=document.getElementById("userReg").value;
