@@ -5,7 +5,7 @@ var userA=new Array("pippo","anna","sergio","ada");
   
 	alert("sono in reg");
 		 
-
+/*
     var user=document.getElementById("userReg").value;
     //alert (user);
     var pwd=document.getElementById("passwordReg").value;
@@ -28,7 +28,7 @@ var userA=new Array("pippo","anna","sergio","ada");
          document.getElementById("errorMessage").value="utente registrato con successo";
         
       }
-	 });
+	 });*/
  }// fine function registrazione() {
 
  
