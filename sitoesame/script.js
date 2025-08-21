@@ -2,7 +2,9 @@ var userA=new Array("pippo","anna","sergio","ada");
   var pwdA=new Array("pi","an","se","ad");
  
      function registrazione() {
-  alert("sono in reg");
+  
+	//alert("sono in reg");
+		 
 
     var user=document.getElementById("userReg").value;
     //alert (user);
@@ -12,10 +14,11 @@ var userA=new Array("pippo","anna","sergio","ada");
     userA[userA.length] =user;
     pwdA[pwdA.length] =pwd;
     var l=userA.length;
+		  alert(userA[l-1]);   alert(pwdA[l-1]);
     if(user==userA[l-1]){
      document.getElementById("errorMessage").value="utente inserito con successo";
       } else{
-           document.getElementById("errorMessage").value="utente non";
+           document.getElementById("errorMessage").value="utente non inserito con successo";
       }
  }// fine function registrazione() {
 
