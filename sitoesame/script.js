@@ -33,7 +33,7 @@ var userA=new Array("pippo","anna","sergio","ada");
 
  
   function valLogin() {
-	
+	aler("sono in vallogging");
     var user=document.getElementById("username").value;
     //alert (user);
     var pwd=document.getElementById("password").value;
