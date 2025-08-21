@@ -20,6 +20,14 @@ var userA=new Array("pippo","anna","sergio","ada");
       } else{
            document.getElementById("errorMessage").value="utente non inserito con successo";
       }
+		       if (password !== confirmPassword) {
+        errorMessage.textContent = "Le password non coincidono!";
+      } else {
+        errorMessage.textContent = "";
+        alert("Registrazione completata con successo!");
+        registerForm.reset();
+      }
+
  }// fine function registrazione() {
 
  
