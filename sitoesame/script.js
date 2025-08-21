@@ -27,7 +27,7 @@ var userA=new Array("pippo","anna","sergio","ada");
         alert("Registrazione completata con successo!");
         registerForm.reset();
       }
-
+	 });
  }// fine function registrazione() {
 
  
