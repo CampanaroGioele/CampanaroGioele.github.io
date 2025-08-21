@@ -11,6 +11,8 @@ var userA=new Array("pippo","anna","sergio","ada");
     var pwd=document.getElementById("passwordReg").value;
     //alert (pwd);
    // document.getElementById("errorMessage").value="utente non";
+		 var confirmPwd = document.getElementById("confirmPasswordReg").value;
+	var errorMessage = document.getElementById("errorMessage");
     userA[userA.length] =user;
     pwdA[pwdA.length] =pwd;
     var l=userA.length;
