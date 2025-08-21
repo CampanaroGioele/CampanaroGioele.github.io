@@ -3,37 +3,37 @@ var userA=new Array("pippo","anna","sergio","ada");
  
      function registrazione() {
   
-	alert("sono in reg");
+	//alert("sono in reg");
 		 
-/*
+
     var user=document.getElementById("userReg").value;
     //alert (user);
     var pwd=document.getElementById("passwordReg").value;
 		 var pwdC=document.getElementById("passwordConfirm").value;
-    alert (pwd);
+    //alert (pwd);
    // document.getElementById("errorMessage").value="utente non";
 		
     userA[userA.length] =user;
     pwdA[pwdA.length] =pwd;
     var l=userA.length;
-		  alert(userA[l-1]);   alert(pwdA[l-1]);
+	  //alert(userA[l-1]);   alert(pwdA[l-1]);
     if(user==userA[l-1]){
      document.getElementById("errorMessage").value="utente inserito con successo";
       } else{
            document.getElementById("errorMessage").value="utente non inserito con successo";
       }
-		       if (pwd !== pwdC) {
+		 if (pwd !== pwdC) {
         document.getElementById("errorMessage").value="Le password non coincidono";
       } else {
          document.getElementById("errorMessage").value="utente registrato con successo";
         
       }
-	 });*/
+	 });
  }// fine function registrazione() {
 
  
   function valLogin() {
-	aler("sono in vallogging");
+	//aler("sono in vallogging");
     var user=document.getElementById("username").value;
     //alert (user);
     var pwd=document.getElementById("password").value;
