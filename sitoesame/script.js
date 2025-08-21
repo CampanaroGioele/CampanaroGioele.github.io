@@ -9,6 +9,7 @@ var userA=new Array("pippo","anna","sergio","ada");
     var user=document.getElementById("userReg").value;
     //alert (user);
     var pwd=document.getElementById("passwordReg").value;
+		 var pwdC=document.getElementById("passwordConfirm").value;
     //alert (pwd);
    // document.getElementById("errorMessage").value="utente non";
 		
@@ -21,12 +22,11 @@ var userA=new Array("pippo","anna","sergio","ada");
       } else{
            document.getElementById("errorMessage").value="utente non inserito con successo";
       }
-		       if (pwdA !== confirmPwdA) {
-        errorMessage.textContent = "Le password non coincidono!";
+		       if (pwd !== pwdC) {
+        document.getElementById("errorMessage").value="Le password non coincidono";
       } else {
-        errorMessage.textContent = "";
-        alert("Registrazione completata con successo!");
-        registerForm.reset();
+         document.getElementById("errorMessage").value="utente registrato con successo";
+        
       }
 	 });
  }// fine function registrazione() {
