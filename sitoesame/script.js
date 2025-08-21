@@ -10,7 +10,7 @@ var userA=new Array("pippo","anna","sergio","ada");
     //alert (user);
     var pwd=document.getElementById("passwordReg").value;
 		 var pwdC=document.getElementById("passwordConfirm").value;
-    //alert (pwd);
+    alert (pwd);
    // document.getElementById("errorMessage").value="utente non";
 		
     userA[userA.length] =user;
