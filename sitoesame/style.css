@@ -22,7 +22,7 @@ nav {
   left: 0;
   width: 100%;
   padding: 15px 0;
-  z-index: 1000;
+
 }
 
 nav ul {
@@ -84,7 +84,7 @@ form input[type="button"] {
   cursor: pointer;
   font-weight: bold;
   border-radius: 5px;
-  transition: background 0.3s ease;
+ 
 }
 
 form input[type="button"]:hover {
@@ -106,4 +106,5 @@ p {
   text-align: center;
   margin-top: 15px;
 }
+
 
